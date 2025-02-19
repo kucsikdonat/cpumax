@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    while (1) {
+        int* memory = malloc(1024 * 1024 * sizeof(int)); // 1 MB memória
+        if (memory == NULL) {
+            printf("Nem sikerült több memóriát foglalni!\n");
+            break; 
+        }
+    }
+
+    return 0;
+}
